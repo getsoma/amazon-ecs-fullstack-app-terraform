@@ -18,6 +18,8 @@ phases:
           echo "$AWS_ACCOUNT_ID"
           echo "See next line for Task Role"
           echo "$ECS_TASK_ROLE"
+          echo "See next line for whole sed"
+          echo echo "-us-gov:iam::$AWS_ACCOUNT_ID:role/$ECS_TASK_ROLE"
           echo "Server build, adding ECS Task Role to the task definition file"
           sed -i "3i\"taskRoleArn\": \"-us-gov:iam::<AWS_ACCOUNT_ID>:role/<ECS_TASK_ROLE>\"," ./Infrastructure/Templates/taskdef.json
           echo "Replacing table name in the server function"
