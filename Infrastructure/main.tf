@@ -330,6 +330,7 @@ module "codebuild_client" {
   service_port           = var.port_app_client
   ecs_role               = var.iam_role_name["ecs"]
   server_alb_url         = module.alb_server.dns_alb
+  ecs_task_role          = var.iam_role_name["ecs_task_role"]
 }
 
 # ------- Creating the server CodeDeploy project -------
