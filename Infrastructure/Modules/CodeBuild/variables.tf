@@ -62,7 +62,7 @@ variable "server_alb_url" {
 variable "ecs_task_role" {
   description = "The name of the ECS Task role to specify in the Task Definition"
   type        = string
-  default     = "null"
+  default     = "arn:aws-us-gov:iam::343663719667:role/ECS-task-Role"
 }
 
 variable "dynamodb_table_name" {
