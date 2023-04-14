@@ -3,7 +3,7 @@
 
 <template>
   <div class="about">
-    <h3>Frontend layer demo</h3>
+    <h3>Frontend layer demo test</h3>
     <h4>This code is written in Vue.js</h4>
     
   </div>
